@@ -36,14 +36,30 @@
   }
 }
 
+@keyframes bgcolorStart {
+  0% {
+    background-color: black;
+  }
+
+  33% {
+    background-color: black;
+  }
+
+  100% {
+    background-color: red;
+  }
+}
+
 #start {
-  background-color: red;
+  background-color: black;
   background-image: url("../assets/background.png");
   background-repeat: no-repeat;
   background-size: cover;
-  animation-name: bgcolor;
-  animation-duration: 25s;
-  animation-iteration-count: infinite;
+  animation-name: bgcolorStart, bgcolor;
+  animation-duration: 2.5s, 25s;
+  animation-delay: 0s, 2.5s;
+  animation-iteration-count: 1, infinite;
+  animation-timing-function: ease-in-out, linear;
 }
 
 @font-face {
