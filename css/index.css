@@ -41,7 +41,7 @@
     background-color: black;
   }
 
-  33% {
+  50% {
     background-color: black;
   }
 
@@ -56,10 +56,10 @@
   background-repeat: no-repeat;
   background-size: cover;
   animation-name: bgcolorStart, bgcolor;
-  animation-duration: 2.5s, 25s;
-  animation-delay: 0s, 2.5s;
+  animation-duration: 1.5s, 25s;
+  animation-delay: 0s, 1.5s;
   animation-iteration-count: 1, infinite;
-  animation-timing-function: ease-in-out, linear;
+  animation-timing-function: linear, linear;
 }
 
 @font-face {
