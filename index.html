@@ -5,7 +5,7 @@
   <title>Jörn Koenen</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="Jörn Koenen Portfolio" content="Personal Portfolio"/>
+  <meta name="Jörn Koenen Portfolio" content="Personal Portfolio" />
   <link rel="stylesheet" href="css/uikit.min.css" />
   <link rel="stylesheet" href="css/index.css" />
   <link rel="icon" type="image/svg" href="assets/logo.svg">
@@ -24,6 +24,7 @@
           <li><a href="#start" uk-scroll="offset:500">Start</a></li>
           <li><a href="#skills">Skills</a></li>
           <li><a href="#education">Bildung</a></li>
+          <li><a href="#projects">Projekte</a></li>
           <li><a href="#contact">Kontakt</a></li>
         </ul>
       </div>
@@ -39,10 +40,10 @@
 
   <div class="uk-section uk-padding-large" id="skills" uk-scrollspy="cls: uk-animation-slide-bottom-medium; target: .animategroup2; delay: 250;">
     <div uk-grid class="uk-grid-match">
-      <div class="uk-width-1-2@s">
+      <div class="uk-width-1-3@s">
         <h1 class="uk-heading-large uk-margin-large-left animategroup2">Skills</h1>
       </div>
-      <div class="uk-width-1-2@s">
+      <div class="uk-width-2-3@s">
         <div class="animategroup2">
           <h2>Java</h2>
           <progress class="uk-progress uk-width-2-3@s" value="75" max="100"></progress>
@@ -64,33 +65,43 @@
   </div>
 
   <div class="uk-section uk-padding-large" id="education" uk-scrollspy="cls: uk-animation-slide-bottom-medium; target: .animategroup; delay: 500;">
-    <div class="uk-grid-match" uk-grid>
-      <div class="uk-width-1-2@s">
+    <div uk-grid>
+      <div class="uk-width-1-3@s">
         <h1 class="uk-heading-large uk-margin-large-left animategroup">Bildung</h1>
       </div>
-      <div class="uk-flex uk-flex-column uk-width-1-2@s">
-        <div class="uk-margin-medium uk-card uk-card-default uk-card-hover uk-card-body uk-width-1-2@m animategroup">
-          <img src="assets/bbs.png" uk-img>
-          <h3 class="uk-card-title">BBS 2 Leer</h3>
-          <h4>Allgemeine Hochschulreife mit Schwerpunkt Informatik</h4>
-          <p>2016 - 2019</p>
-        </div>
-        <div class="uk-margin-medium uk-card uk-card-default uk-card-hover uk-card-body uk-width-1-2@m animategroup">
+      <div class="uk-flex uk-flex-column uk-width-2-3@s uk-child-width-1-2@m">
+        <div class="uk-margin-medium uk-card uk-card-default uk-card-hover uk-card-body animategroup">
           <img src="assets/fh.svg" uk-img="data-src:assets/fh.svg">
           <h3 class="uk-card-title">FH Münster</h3>
           <h4>Bachelor of Science in Informatik</h4>
           <p>2019 - heute</p>
         </div>
+        <div class="uk-margin-medium uk-card uk-card-default uk-card-hover uk-card-body animategroup">
+          <img src="assets/bbs.png" uk-img>
+          <h3 class="uk-card-title">BBS 2 Leer</h3>
+          <h4>Allgemeine Hochschulreife mit Schwerpunkt Informatik</h4>
+          <p>2016 - 2019</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="uk-section uk-padding-large" id="projects" uk-scrollspy="cls: uk-animation-slide-bottom-medium; target: .animategroup4; delay: 150;">
+    <div uk-grid>
+      <div class="uk-width-1-3@s">
+        <h1 class="uk-heading-large uk-margin-large-left animategroup4">GitHub Projekte</h1>
+      </div>
+      <div class="uk-column-1-2@s uk-width-2-3@s uk-grid-match uk-child-width-1-3@s" id="repos" uk-grid>
       </div>
     </div>
   </div>
 
   <div class="uk-section uk-padding-large uk-padding-remove-bottom uk-background-secondary uk-light" id="contact" uk-scrollspy="cls: uk-animation-slide-bottom-medium; target: .animategroup3; delay: 250;">
     <div uk-grid class="uk-grid-match">
-      <div class="uk-width-1-2@s animategroup3">
+      <div class="uk-width-1-3@s animategroup3">
         <h1 class="uk-heading-large uk-margin-large-left">Kontakt</h1>
       </div>
-      <div class="uk-flex uk-flex-middle uk-width-1-2@s">
+      <div class="uk-flex uk-flex-middle uk-width-2-3@s">
         <ul class="uk-iconnav">
           <li><a href="mailto:joern.koenen@gmail.com" target="_blank" class="uk-margin-medium-right animategroup3" uk-icon="icon: mail; ratio:2.5;"></a></li>
           <li><a href="https://github.com/JKoenen2" target="_blank" class="uk-margin-medium-right animategroup3" uk-icon="icon: github; ratio:2.5;"></a></li>
@@ -101,9 +112,9 @@
     <p class="animategroup3 uk-flex uk-flex-center uk-margin-large-top uk-margin-bottom">Made with ❤️ by me</p>
   </div>
 
-
   <script src="js/uikit.min.js"></script>
   <script src="js/uikit-icons.min.js"></script>
+  <script src="js/github.js"></script>
 </body>
 
 </html>
